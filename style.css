@@ -5,7 +5,8 @@
 
 .main_container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     width: 1350px;
     margin: 0 auto;
     font-family: Montserrat;
@@ -14,10 +15,6 @@
 .column {
     display: flex;
     flex-direction: column;
-}
-
-.row {
-    flex-direction: row;
 }
 
 /* HEADER START*/
@@ -69,10 +66,10 @@
 
 /* MAIN PAGE START*/
 .main_page {
-    justify-content: center;
     background-image: url('/src/slider.png');
     background-size: cover;
     padding-bottom: 50px;
+    height: 83vh;
 }
 
 .main_header {
@@ -136,12 +133,6 @@
     background-image: url('/src/third_section_bg.png');
     background-size: cover;
     padding: 72px 0;
-}
-
-.fixed_feeds .main_container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .feeds_header {
@@ -267,12 +258,6 @@
 .found {
     padding: 48px 0px 96px 0px;
     background: var(--main-blue);
-}
-
-.found .main_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .found_main_header {
@@ -434,5 +419,321 @@
     margin-bottom: 12px;
 }
 
-
 /* FOUNDATION END*/
+
+
+/* OUR PEOPLE START */
+.people {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.people_double_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.people_left_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.people_header {
+    color: var(--main-blue);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px
+}
+
+.people_p {
+    color: var(--main-blue);
+    width: 486px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.people_right_box {
+    margin-left: 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.people_img {
+    width: 90px;
+    height: 90px;
+    margin-top: 9px;
+    margin-right: 9px;
+    border-radius: 10px;
+}
+
+/* OUR PEOPLE END */
+
+
+/* NEWS START */
+.news {
+    background: #ECECF3;
+    padding: 96px 0;
+}
+
+.news_header {
+    color: var(--main-blue);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px
+}
+
+.filters_container {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin-top: 48px;
+}
+
+.filter_all_years {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 9px 28px;
+    border: none;
+    border-radius: 100px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.65) 100%), #294BAD;
+}
+
+.filter_year {
+    color: var(--main-blue);
+    font-size: 24px;
+    font-weight: 700;
+    padding: 9px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--main-yellow);
+}
+
+.filter_choose_month {
+    color: var(--main-blue);
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--main-blue);
+}
+
+.news_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 48px 0;
+}
+
+.news_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    width: 432px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-right: 18px;
+    margin-top: 18px;
+}
+
+.news_card_img {
+    width: 432px;
+    height: 293px;
+    border-bottom: 1px solid var(--main-yellow);
+}
+
+.news_card_h3 {
+    color: var(--main-blue);
+    margin: 24px 24px 0 24px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px
+}
+
+.news_card_h4 {
+    color: var(--main-blue);
+    margin: 12px 24px 0 24px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.news_card_p {
+    color: var(--main-blue);
+    margin: 24px 24px 0 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px
+}
+
+.news_cards_more_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 18px;
+    width: 100%;
+}
+
+.news_cards_more {
+    display: flex;
+    align-items: center;
+}
+
+.more_p {
+    color: var(--main-blue);
+    opacity: 0.45;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px
+}
+
+.more_svg {
+    color: var(--main-blue);
+    opacity: 0.45;
+    margin-left: 12px;
+}
+
+/* NEWS END */
+
+
+/* GRATITUDE START */
+.grat {
+    height: 90vh;
+    background: var(--main-blue);
+    background-image: url('src/ornament.svg');
+    background-size: cover;
+    padding: 24px 0;
+}
+
+.grat_header {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px
+}
+
+.grat_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 48px 0;
+}
+
+.grat_card {
+    display: flex;
+    flex-direction: column;
+    width: 202px;
+    padding: 24px;
+    border-radius: 8px;
+    background: #FFF;
+}
+
+.grat_card_date {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 6px;
+}
+
+.grat_card_date_p {
+    color: var(--main-blue);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.grat_card_user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.grat_card_img {
+    margin-right: 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+}
+
+.grat_card_h4 {
+    color: var(--main-blue);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px
+}
+
+.grat_card_p {
+    color: var(--main-blue);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px
+}
+
+.grat_card_share {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.grat_card_share_img {
+    color: var(--main-blue);
+    width: 18px;
+    height: 18px;
+}
+
+.grat_card_share_p {
+    color: var(--main-blue);
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.grat_arrows {
+    margin: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.grat_arrow {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    color: #ECECF3;
+    border-radius: 100px;
+    border: 2px solid #ECECF3;
+}
+
+/* GRATITUDE END */
+
+
+/* FOOTER START */
+footer{
+    margin: 96px 0;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 48px;
+}
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.footer_menu_items {
+    color: var(--main-blue);
+    font-size: 18px;
+    font-weight: 500;
+}
+.line{
+    width: 100%;
+    border-bottom: 1px solid var(--main-blue);
+}
+/* FOOTER END */
